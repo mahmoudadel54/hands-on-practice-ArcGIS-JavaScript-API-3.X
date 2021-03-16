@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 1vh;
+}
+#map{
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Basemap Gallery*/
+#basemapGalleryDiv{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: min-content;
+    max-height: 37vh;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    overflow: overlay;
+    right: 0;
+    top:15vh;
+    padding: 0 3vw;
+}
+.esriBasemapGalleryThumbnail{
+    width: 8vw;
+    height: 10vh;
+}
+/* BaseMapToggle */
+#BasemapToggle {
+    position: absolute;
+    bottom: 10vh;
+    left: 20px;
+    z-index: 50;
+  }
+  .BasemapToggle .basemapTitle {
+width: 100%;  
+}
+
+ .esriBasemapGalleryNode{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+ }
+ /*End BaseMap Widgets */
+
+/*Search Widget*/
+#search {
+    position: absolute;
+    z-index: 2;
+    top: 10vh;
+    margin: 0 2vw;
+ }
+ 
+ /*End Search Widget*/
+
+ /*Start Home Button*/
+ #HomeButton {
+    position: absolute;
+    top: 16vh;
+    left: 2.5vw;
+    z-index: 50;
+}
+
+.homeContainer{
+    background-color: gray;
+    border-radius: 0.5em;
+}
+/*End Home Button*/
+/* Layers List Widget */
+#layerList {
+    position: absolute;
+    top: 32vh;
+    left: 2.5vw;
+    z-index: 50;
+    width:30vw;
+    
+}
+.esriSliderLabels{
+    height: fit-content !important;
+}
+.esriContainer{
+    padding: 0.5rem;
+    width: fit-content;
+}
+.esriTitleContainer{
+        border-top: none !important;
+    }
+    .esriLayer.esriListVisible.esriHasTabContent{
+
+        border-bottom: 2px solid #ccc;
+    }
+
+.esriTitle, .esriList, .esriTitleContainer{
+    width: fit-content;
+}
+
+/*End Layers List*/
+
+/*Legend Widget*/
+#legend{
+    display: none;
+}
+.legend-active{
+    position: absolute !important;
+    bottom: 25vh;
+    right:  5vw;
+    z-index: 50;
+    display: flex !important;
+    flex-flow: column;
+    align-items: center;
+    background: white;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    width: fit-content;
+    
+}
+.show-legend-btn{
+position: absolute;
+right: 1.7vw;
+bottom: 25vh;
+
+}
+.fa-layer-group{
+    font-size: x-large;
+}
+
+/*End Legend Widget*/
+
+/*Start GeoLocation Button*/
+#geolocation{
+    position: absolute;
+    right: 1.7vw;
+    bottom: 19vh;
+}
+/*End GeoLocation*/
+
+/*Start Measuremet Widget Style*/
+#measurement{
+   display: none;
+}
+#measurement.measurement-active{
+    position:absolute !important; 
+    top:18vh; 
+    width: fit-content;
+    height: fit-content;
+    display: flex !important;
+    flex-flow: column;
+    margin: auto;
+    background-color: white;
+    left: 35%;
+    padding: 0.5rem;
+    z-index: 3;
+    text-align: center;
+}
+.show-measurement-btn{
+    position:absolute; 
+    top:10vh; 
+    left: 35%;
+    padding: 0.5rem;
+}
+.show-measurement-btn.active{
+    background: darkgray;
+    color: currentcolor;
+    border-radius: 1em;
+}
+.dijitReset.dijitStretch.dijitButtonContents{
+    margin: 0 0.5em;
+}
+.esriMeasurement .esriButtonChecked .dijitButtonNode{
+    background: grey;
+    border-radius: 1em;
+}
+
+.dijitOffScreen{
+    vertical-align: middle;
+
+}
+.dijitPopup.dijitMenuPopup{
+    position:absolute; 
+    top:10vh; 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    background-color: darkgray;
+    left: 35%;
+    padding: 0.5rem;
+    text-align: center;
+
+}
+.dijitReset.dijitMenuItemLabel:hover{
+    background: wheat;
+}
+/*End Measurement*/
+
+
+/*Start Gauge Widget*/
+/* #gaugeDiv{
+    position:absolute; 
+    top:10vh; 
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    background-color: darkgray;
+    padding: 0.5rem;
+    text-align: center;
+} */
+/*End Gauge Widget*/
+
+/*Start feature table*/
+#feat-table{
+    display: none;
+}
+
+#feat-table.feat-table-active{
+    position:relative; 
+    /* bottom:0;  */
+    /* width: fit-content; */
+    /* height: fit-content; */
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    background-color: darkgray;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+    min-height: 30vh;
+    height: fit-content;
+    
+}
+
+.dijitContentPane.esri-feature-table-content-pane.esri-feature-table-menu.dijitBorderContainerNoGutter-child.dijitBorderContainerNoGutter-dijitContentPane.dijitBorderContainerNoGutterPane, .dgrid-row-table{
+    height: fit-content;
+    z-index: 2;
+}
+.esri-feature-table .esri-feature-table-grid, .esri-feature-table .dgrid-header-row{
+    position: absolute !important;
+}
+.dgrid-scroller{
+    top:4vh !important;
+    margin: 0 !important;
+}
+
+.show-table-btn{
+    position:absolute; 
+    top:25vh; 
+    left: 3vw;
+    padding: 0.5rem;  
+}
+/*End feature table*/
