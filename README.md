@@ -10,6 +10,11 @@
 
 ### 6- Ex6 ---> Print map with different format and layouts
 
+### 7- Ex7 ---> Search with buffer
+
+### 8- Ex8 --> Some Spatial Analysis
+
+### 9- Ex9 --> Display Statistical info
 https://developers.arcgis.com/javascript/3/jsapi/print-amd.html#print1
 https://developers.arcgis.com/javascript/3/jsapi/printtemplate-amd.html
 https://developers.arcgis.com/javascript/3/jsapi/printtask-amd.html
