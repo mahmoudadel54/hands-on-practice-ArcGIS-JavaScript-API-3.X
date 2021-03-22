@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>Query Statistics with SQL Expression</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.35/esri/css/esri.css">
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #results {
+            position: absolute;
+            z-index: 10;
+            bottom: 45px;
+            right: 10px;
+            background-color: black;
+            opacity: 0.8;
+            color: cornsilk;
+            width: 300px;
+            padding: 5px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .stats {
+            color: darkorange;
+        }
+    </style>
+    <script src="https://js.arcgis.com/3.35/"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="results">
+        <h3>Summary Statistics</h3>
+        Click on the map to view summary statistics of the
+        airports numbers within
+        30 mile of the clicked point.<br><br>
+        <div id="display">
+            <strong>Block groups: </strong><span class="stats" id="countResult"></span><br>
+            <strong>Min density: </strong><span class="stats" id="minResult"></span><br>
+            <strong>Max density: </strong><span class="stats" id="maxResult"></span><br>
+            <strong>Average density: </strong><span class="stats" id="avgResult"></span><br>
+            <strong>Standard deviation: </strong><span class="stats" id="stdDevResult"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

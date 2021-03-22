@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Delete features</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.35/esri/css/esri.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.arcgis.com/3.35/"></script>
+</head>
+
+<body>
+    <div id="mapDiv">
+        <div id="edit-template">
+            <i class="fas fa-expand-arrows-alt edit-type" title="move feature" data-edit-type="MOVE"></i>
+            <i class="fas fa-sync-alt edit-type" title="rotate feature" data-edit-type="ROTATE"></i>
+            <i class="fas fa-draw-polygon edit-type" title="edit vertices" data-edit-type="EDIT_VERTICES"></i>
+            <i class="fas fa-trash delete-type" title="delete features"></i>
+        </div>
+        <div id="filter-list">
+            <select name="president" id="president">
+                <option value="0"> Filter By Coutry ISO name</option>
+                <option value="AL">AL</option>
+                <option value="AT">AT</option>
+                <option value="AD">AD</option>
+                <option value="ES">ES</option>
+                <option value="BE">BE</option>
+                <option value="CZ">CZ</option>
+            </select>
+            <button id="reset-filter-president">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

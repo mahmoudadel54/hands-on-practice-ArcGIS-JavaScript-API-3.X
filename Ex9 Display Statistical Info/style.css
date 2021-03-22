@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#mapDiv {
+  height: 100vh;
+  width: 100%;
+}
+.buffer {
+  position: absolute;
+  top: 2em;
+  display: flex;
+  flex-flow: column;
+  right: 2em;
+  z-index: 5;
+}
+
+/*Search Widget*/
+#search {
+  position: absolute;
+  z-index: 2;
+  top: 13vh;
+  margin: 0;
+}
+
+.ul-search {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
+  font-size: small;
+}
+.ul-search li:hover {
+  background-color: grey;
+}
+
+/*End Search Widget*/

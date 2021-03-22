@@ -95,6 +95,11 @@ require([
     description:
       "<h5>{STATE_NAME}</h5><br></br><strong>Its Area: {SQMI}</strong> ",
   });
+  /*
+  3- use InfoWindow -- >"esri/dijit/InfoWindow"
+  An InfoWindow is an HTML popup. It often contains the attributes of a Graphic. 
+  4- Popup 
+  */
   /**End Popup  */
   /******************************************************************************** */
 
